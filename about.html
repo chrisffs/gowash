@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body class="relative">
+    <div class="relative bg-bgGray z-50">
+        <div class="container mx-auto justify-between text-[.9286rem] py-[.5em] text-[#909191] hidden 2xl:flex">
+            <div>
+                We are open 7 days per week 8am-9pm
+            </div>
+            <div>
+                <ul class="flex gap-2">
+                    <li><a href="tel:1(800) 123 4567">1(800) 123 4567</a></li>
+                    <li><a href="#"><i class="icon-user mr-1"></i>Login</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <nav id="header" class="sticky top-[-4px] z-40 bg-white shadow-[0_2px_7px_0px_rgba(23,200,202,.3)]">
+        <div class="relative">
+            <div class="absolute left-[30px] top-1/2 -translate-y-1/2 block 2xl:hidden">
+                <label class="cursor-pointer" id="hamburger-menu" for="hamburger-checkbox">
+                    <i class="icon-menu-1 text-[26px] text-blackText hover:text-main duration-300 ease"></i>
+                </label>
+            </div>
+            <input class="hidden" type="checkbox" id="hamburger-checkbox">
+            <div id="sidebar" class="sidebar fixed h-full left-0 top-0 bg-main z-40 block 2xl:hidden">
+                <ul class="">
+                    <li class="flex flex-col">
+                        <input class="hidden group-checkbox" type="checkbox" id="link-home">
+                        <label class="relative cursor-pointer hover:bg-[#15B6B8] ease duration-300 grow text-white font-bold tracking-[.19em] text-[12px] py-[17px] pl-[35px] pr-[54px]" for="link-home">
+                            HOME
+                            <div class="absolute right-[1em] top-1/2 -translate-y-1/2">
+                                <div class="chevron">
+                                    <i class="icon-down-open"></i>
+                                </div>
+                            </div>
+                        </label>
+                        <ul class="sub-menu bg-transparent">    
+                            <li class="flex">
+                                <a class="grow text-white font-bold text-[14px] py-3 pl-[35px] pr-[54px]" href="/">Home Fullwidth</a>
+                            </li>
+                            <li class="flex">
+                                <a class="grow text-white font-bold text-[14px] py-3 pl-[35px] pr-[54px]" href="/">Home Boxed</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex flex-col">
+                        <input class="hidden group-checkbox" type="checkbox" id="link-about">
+                        <label class="active relative cursor-pointer hover:bg-[#15B6B8] ease duration-300 grow text-white font-bold tracking-[.19em] text-[12px] py-[17px] pl-[35px] pr-[54px]" for="link-about">
+                            ABOUT US
+                            <div class="absolute right-[1em] top-1/2 -translate-y-1/2">
+                                <div class="chevron">
+                                    <i class="icon-down-open"></i>
+                                </div>
+                            </div>
+                        </label>
+                        <ul class="sub-menu bg-transparent">    
+                            <li class="flex">
+                                <a class="bg-[#119293] grow text-white text-[14px] py-3 pl-[35px] pr-[54px]" href="about.html">About</a>
+                            </li>
+                            <li class="flex">
+                                <a class="grow text-white text-[14px] py-3 pl-[35px] pr-[54px]" href="/">Features</a>
+                            </li>
+                            <li class="flex">
+                                <a class="grow text-white text-[14px] py-3 pl-[35px] pr-[54px]" href="/">Shop</a>
+                            </li>
+                            <li class="flex">
+                                <a class="grow text-white text-[14px] py-3 pl-[35px] pr-[54px]" href="/">Gallery</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex flex-col">
+                        <input class="hidden group-checkbox" type="checkbox" id="link-services">
+                        <label class="relative cursor-pointer hover:bg-[#15B6B8] ease duration-300 grow text-white font-bold tracking-[.19em] text-[12px] py-[17px] pl-[35px] pr-[54px]" for="link-services">
+                            SERVICES
+                            <div class="absolute right-[1em] top-1/2 -translate-y-1/2">
+                                <div class="chevron">
+                                    <i class="icon-down-open"></i>
+                                </div>
+                            </div>
+                        </label>
+                        <ul class="sub-menu bg-transparent">    
+                            <li class="flex">
+                                <a class="grow text-white text-[14px] py-3 pl-[35px] pr-[54px]" href="/">All Services</a>
+                            </li>
+                            <li class="flex">
+                                <a class="grow text-white text-[14px] py-3 pl-[35px] pr-[54px]" href="/">Single Service</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex flex-col">
+                        <a href="#" class="relative cursor-pointer hover:bg-[#15B6B8] ease duration-300 grow text-white font-bold tracking-[.19em] text-[12px] py-[17px] pl-[35px] pr-[54px]" for="link-pricing">
+                            PRICING
+                        </a>
+                    </li>
+                    <li class="flex flex-col">
+                        <input class="hidden group-checkbox" type="checkbox" id="link-blog">
+                        <label class="relative cursor-pointer hover:bg-[#15B6B8] ease duration-300 grow text-white font-bold tracking-[.19em] text-[12px] py-[17px] pl-[35px] pr-[54px]" for="link-blog">
+                            BLOG
+                            <div class="absolute right-[1em] top-1/2 -translate-y-1/2">
+                                <div class="chevron">
+                                    <i class="icon-down-open"></i>
+                                </div>
+                            </div>
+                        </label>
+                        <ul class="sub-menu bg-transparent">    
+                            <li class="flex">
+                                <a class="grow text-white text-[14px] py-3 pl-[35px] pr-[54px]" href="/">Classic Style</a>
+                            </li>
+                            <li class="flex">
+                                <a class="grow text-white text-[14px] py-3 pl-[35px] pr-[54px]" href="/">Style Masonry 2 Columns</a>
+                            </li>
+                            <li class="flex">
+                                <a class="grow text-white text-[14px] py-3 pl-[35px] pr-[54px]" href="/">Style Masonry 3 Columns</a>
+                            </li>
+                            <li class="flex">
+                                <a class="grow text-white text-[14px] py-3 pl-[35px] pr-[54px]" href="/">Style Portfolio 2 Columns</a>
+                            </li>
+                            <li class="flex">
+                                <a class="grow text-white text-[14px] py-3 pl-[35px] pr-[54px]" href="/">Style Portfolio 3 Columns</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex flex-col">
+                        <a href="contact.html" class="relative cursor-pointer hover:bg-[#15B6B8] ease duration-300 grow text-white font-bold tracking-[.19em] text-[12px] py-[17px] pl-[35px] pr-[54px]" for="link-pricing">
+                            CONTACTS
+                        </a>
+                    </li>
+                    <li class="flex flex-col">
+                        <a href="#" class="relative cursor-pointer hover:bg-[#15B6B8] ease duration-300 grow text-white font-bold tracking-[.19em] text-[12px] py-[17px] pl-[35px] pr-[54px]" for="link-pricing">
+                            ORDER
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mask cursor-pointer bg-[rgba(0,0,0,.6)] h-screen absolute w-full 2xl:invisible">
+            </div>
+            <div class="container mx-auto flex justify-center 2xl:justify-between ">
+                <div class="mt-[1.5em] mb-[.8em]">
+                    <a href="">
+                        <img src="img/logo_2x.webp" class="h-[40px] md:h-[52px] 2xl:h-[62px] mr-[.7857em] mb-[.7857em]" alt="" srcset="">
+                    </a>
+                </div>
+                <div class="hidden 2xl:flex">
+                    <ul class="flex items-center">
+                        <li class="px-[1.5em] py-[.2em]">
+                            <a href="/" class="font-bold text-[.857rem] text-grayText tracking-[.19em] hover:text-main transition">HOME</a>
+                        </li>
+                        <!-- <li class="px-[1.5em] py-[.2em] relative menu-link">
+                            <a class="font-bold text-[.857rem] text-main tracking-[.19em] hover:text-main transition pb-10 cursor-pointer">ABOUT US</a>
+                            <ul class="submenu absolute bg-[#fff] border-[#e1e0df] border w-[220px] top-16 left-0">
+                                <li class="text-grayText flex hover:bg-gray-100"><a href="about.html" class="px-5 py-3 grow">About</a></li>
+                                <li class="text-grayText flex hover:bg-gray-100"><a href="" class="px-5 py-3 grow">Features</a></li>
+                                <li class="text-grayText flex hover:bg-gray-100"><a href="" class="px-5 py-3 grow">Shop</a></li>
+                                <li class="text-grayText flex hover:bg-gray-100"><a href="" class="px-5 py-3 grow">Gallery</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="px-[1.5em] py-[.2em] relative">
+                            <a class="font-bold text-[.857rem] text-main tracking-[.19em] hover:text-main transition pb-10 cursor-pointer menu-link">ABOUT US</a>
+                            <ul class="submenu absolute bg-[#fff] border-[#e1e0df] border w-[220px] top-16 left-0">
+                                <li class="text-grayText flex hover:bg-gray-100"><a href="about.html" class="px-5 py-3 grow">About</a></li>
+                                <li class="text-grayText flex hover:bg-gray-100"><a href="" class="px-5 py-3 grow">Features</a></li>
+                                <li class="text-grayText flex hover:bg-gray-100"><a href="" class="px-5 py-3 grow">Shop</a></li>
+                                <li class="text-grayText flex hover:bg-gray-100"><a href="" class="px-5 py-3 grow">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="px-[1.5em] py-[.2em]">
+                            <a href="" class="font-bold text-[.857rem] text-grayText tracking-[.19em] hover:text-main transition">SERVICES</a>
+                        </li>
+                        <li class="px-[1.5em] py-[.2em]">
+                            <a href="" class="font-bold text-[.857rem] text-grayText tracking-[.19em] hover:text-main transition">PRICING</a>
+                        </li>
+                        <li class="px-[1.5em] py-[.2em]">
+                            <a href="" class="font-bold text-[.857rem] text-grayText tracking-[.19em] hover:text-main transition">BLOG</a>
+                        </li>
+                        <li class="px-[1.5em] py-[.2em]">
+                            <a href="contact.html" class="font-bold text-[.857rem] text-grayText tracking-[.19em] hover:text-main transition">CONTACTS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="gradient-btn-bg py-[1em] px-[2.3em] text-[#fff] font-bold text-[.857rem] rounded-full tracking-[.19em] ml-[1em]">ORDER</a>
+                        </li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+    </nav>
+    <aside class="fixed top-1/2 -translate-y-1/2 right-0 w-[40px] sm:w-[60px] overflow-visible shadow-[0_2px_24px_-2px_rgba(0,0,0,.14)] z-50"> 
+        <div>
+            <div class="relative mt-[2px]">
+                <div class="bg-main hover-trigger">
+                    <a href="#" class="w-auto bg-main w-[40px] sm:w-[60px] h-[40px] sm:h-[60px] flex justify-center items-center relative leading-[40px] sm:leading-[60px] hover:-translate-x-[8px] duration-300 ease">
+                        <div class="w-[25px] sm:w-[28px] bg-main">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4.78571 5H18.2251C19.5903 5 20.5542 6.33739 20.1225 7.63246L18.4558 12.6325C18.1836 13.4491 17.4193 14 16.5585 14H6.07142M4.78571 5L4.74531 4.71716C4.60455 3.73186 3.76071 3 2.76541 3H2M4.78571 5L6.07142 14M6.07142 14L6.25469 15.2828C6.39545 16.2681 7.23929 17 8.23459 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 17.8954 7.89543 17 9 17C10.1046 17 11 17.8954 11 19Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="hover-effect text-[10px] text-white font-semibold tracking-[1px] leading-[40px] sm:leading-[60px] h-[40px] sm:h-[60px] px-[20px] bg-[#191e2d] absolute w-max right-[100%] top-0 duration-300 ease"> 
+                    BUY THEME
+                </div>
+            </div>
+            <div class="relative mt-[2px]">
+                <div class="bg-main hover-trigger">
+                    <a href="#" class="w-auto bg-main w-[40px] sm:w-[60px] h-[40px] sm:h-[60px] flex justify-center items-center relative leading-[40px] sm:leading-[60px] hover:-translate-x-[8px] duration-300 ease">
+                        <div class="w-[25px] sm:w-[28px] bg-main">
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>ionicons-v5-e</title><path d="M432,112V96a48.14,48.14,0,0,0-48-48H64A48.14,48.14,0,0,0,16,96V352a48.14,48.14,0,0,0,48,48H80" style="fill:none;stroke:#FFFFFF;stroke-linejoin:round;stroke-width:32px"></path><rect x="96" y="128" width="400" height="336" rx="45.99" ry="45.99" style="fill:none;stroke:#FFFFFF;stroke-linejoin:round;stroke-width:32px"></rect><ellipse cx="372.92" cy="219.64" rx="30.77" ry="30.55" style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-width:32px"></ellipse><path d="M342.15,372.17,255,285.78a30.93,30.93,0,0,0-42.18-1.21L96,387.64" style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></path><path d="M265.23,464,383.82,346.27a31,31,0,0,1,41.46-1.87L496,402.91" style="fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></path></g></svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="hover-effect text-[10px] text-white font-semibold tracking-[1px] leading-[40px] sm:leading-[60px] h-[40px] sm:h-[60px] px-[20px] bg-[#191e2d] absolute w-max right-[100%] top-0 duration-300 ease"> 
+                    OUR BESTSELLERS
+                </div>
+            </div>
+            <div class="relative mt-[2px]">
+                <div class="bg-main hover-trigger">
+                    <a href="#" class="w-auto bg-main w-[40px] sm:w-[60px] h-[40px] sm:h-[60px] flex justify-center items-center relative leading-[40px] sm:leading-[60px] hover:-translate-x-[8px] duration-300 ease">
+                        <div class="w-[25px] sm:w-[28px] bg-main">
+                            <svg fill="#FFFFFF" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 592.018 592.018" xml:space="preserve" stroke="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <circle cx="503.441" cy="93.853" r="21.216"></circle> <path d="M503.441,115.569c-11.975,0-21.717-9.742-21.717-21.716c0-11.975,9.742-21.716,21.717-21.716 c11.974,0,21.715,9.742,21.715,21.716C525.156,105.827,515.415,115.569,503.441,115.569z M503.441,73.137 c-11.423,0-20.717,9.293-20.717,20.716s9.294,20.716,20.717,20.716c11.422,0,20.715-9.293,20.715-20.716 S514.863,73.137,503.441,73.137z"></path> </g> <g> <circle cx="440.201" cy="93.853" r="21.216"></circle> <path d="M440.201,115.569c-11.975,0-21.717-9.742-21.717-21.716c0-11.975,9.742-21.716,21.717-21.716 c11.974,0,21.715,9.742,21.715,21.716C461.916,105.827,452.175,115.569,440.201,115.569z M440.201,73.137 c-11.423,0-20.717,9.293-20.717,20.716s9.294,20.716,20.717,20.716c11.422,0,20.715-9.293,20.715-20.716 S451.623,73.137,440.201,73.137z"></path> </g> <g> <circle cx="376.961" cy="93.853" r="21.216"></circle> <path d="M376.961,115.569c-11.975,0-21.717-9.742-21.717-21.716c0-11.975,9.742-21.716,21.717-21.716s21.717,9.742,21.717,21.716 C398.678,105.827,388.936,115.569,376.961,115.569z M376.961,73.137c-11.423,0-20.717,9.293-20.717,20.716 s9.294,20.716,20.717,20.716s20.717-9.293,20.717-20.716S388.384,73.137,376.961,73.137z"></path> </g> <g> <path d="M591.518,524.858V67.16c0-32.058-26.082-58.14-58.141-58.14H58.64C26.582,9.02,0.5,35.102,0.5,67.16v457.698 c0,32.058,26.082,58.14,58.14,58.14h474.737C565.436,582.998,591.518,556.916,591.518,524.858z M43.34,67.16 c0-8.45,6.85-15.3,15.3-15.3h474.737c8.449,0,15.301,6.85,15.301,15.3v65.484H43.34V67.16z M43.34,524.858V175.484h505.338 v349.374c0,8.449-6.852,15.3-15.301,15.3H58.64C50.19,540.158,43.34,533.307,43.34,524.858z"></path> <path d="M533.377,583.498H58.64c-32.334,0-58.64-26.306-58.64-58.64V67.16C0,34.826,26.306,8.52,58.64,8.52h474.737 c32.335,0,58.641,26.306,58.641,58.64v457.698C592.018,557.192,565.712,583.498,533.377,583.498z M58.64,9.52 C26.857,9.52,1,35.377,1,67.16v457.698c0,31.782,25.857,57.64,57.64,57.64h474.737c31.783,0,57.641-25.857,57.641-57.64V67.16 c0-31.783-25.857-57.64-57.641-57.64H58.64z M533.377,540.658H58.64c-8.712,0-15.8-7.088-15.8-15.8V174.984h506.338v349.874 C549.178,533.57,542.09,540.658,533.377,540.658z M43.84,175.984v348.874c0,8.161,6.64,14.8,14.8,14.8h474.737 c8.161,0,14.801-6.639,14.801-14.8V175.984H43.84z M549.178,133.144H42.84V67.16c0-8.712,7.088-15.8,15.8-15.8h474.737 c8.713,0,15.801,7.088,15.801,15.8V133.144z M43.84,132.144h504.338V67.16c0-8.161-6.64-14.8-14.801-14.8H58.64 c-8.161,0-14.8,6.639-14.8,14.8V132.144z"></path> </g> </g> </g> </g></svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="hover-effect text-[10px] text-white font-semibold tracking-[1px] leading-[40px] sm:leading-[60px] h-[40px] sm:h-[60px] px-[20px] bg-[#191e2d] absolute w-max right-[100%] top-0 duration-300 ease"> 
+                    HIDE PANEL
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <section>
+            <div class="gradient-slides-bg">
+                <div class="container mx-auto flex lg:flex-row flex-col justify-between items-center">
+                    <h1 class="text-[1.786rem] text-white pt-[1.1em] pb-[1.25em]">About</h1>
+                    <div class="pb-[1.5em] lg:pb-0 text-[.8571rem] tracking-[.19em]">
+                        <a href="/" class="font-bold text-[rgba(255,255,255,.8)] hover:text-white duration-300 ease">HOME</a>
+                        <span class="px-[2em] font-bold text-[rgba(255,255,255,.8)]">/</span>
+                        <a href="/about.html" class="font-bold text-[rgba(255,255,255,.8)] hover:text-white duration-300 ease">ABOUT</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="mt-[8.4rem] container mx-auto">
+                <div class="text-center">
+                    <h1 class="leading-[1.2em] text-blackText text-[2.514rem] sm:text-[2.814rem] xl:text-[2.914rem] 2xl:text-[3.214rem] after:content-[' '] after:block after:w-[47%] after:h-[1px] after:mx-auto after:mt-[.8667em] after:mb-[.7667em] after:max-w-[270px] after:bg-[#eaeaea]">Delivering Clean Clothes and Peace of Mind</h1>
+                    <h4 class="text-main text-[.8571em] tracking-[.19em] font-bold mb-[4.35rem]">REASONS TO CHOOSE US</h4>
+                </div>
+                <div class="flex flex-wrap ">
+                    <div class="w-full sm:w-1/2 lg:w-1/3 pb-[10px] pr-[10px] sm:pb-[20px] sm:pr-[20px] lg:pb-[30px] lg:pr-[30px]">
+                        <div class="mx-auto mb-[3.85em] w-[20.2rem] max-w-[77%] relative">
+                            <img class="rounded-full" src="img/service-3-370x370.jpg" alt="">
+                            <div class="w-full h-full absolute flex top-0 group">
+                                <a href="#" class="grow relative h-full w-full bg-[rgba(0,0,0,.5)] h-full w-full rounded-full opacity-0 group-hover:opacity-100 duration-300 transition-opacity">
+                                    <i class="icon-link text-white text-[0.5rem] group-hover:text-[3rem] transition-all duration-300 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[rgba(255,255,255,.3)] rounded-[16px] w-[2.2em] h-[2.2em] flex items-center justify-center"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="px-[35px] text-center">
+                            <a href="#" class="relative hover:text-[#20d9c9] duration-300 ease text-blackText text-[1.286rem] xl:text-[1.586rem] 5xl:text-[1.786rem] after:content-[' '] after:block after:w-[47%] after:h-[1px] after:mx-auto after:my-[1.0667em] after:bg-[#eaeaea]">Professional Care</a>
+                           
+                            <p class="text-accent text-balance mt-[1.2857em]">
+                                We’re a supreme, door-to-door delivery dry cleaning and laundry service. With minimum effort you choose a pick-up & drop-off time and we’ll.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/3 pt-[30px] sm:pt-0 pb-[10px] pr-[10px] sm:pb-[20px] sm:pr-[20px] lg:pb-[30px] lg:pr-[30px]">
+                        <div class="mx-auto mb-[3.85em] w-[20.2rem] max-w-[77%] relative">
+                            <img class="rounded-full" src="img/service-2-370x370.jpg" alt="">
+                            <div class="w-full h-full absolute flex top-0 group">
+                                <a href="#" class="grow relative h-full w-full bg-[rgba(0,0,0,.5)] h-full w-full rounded-full opacity-0 group-hover:opacity-100 duration-300 transition-opacity">
+                                    <i class="icon-link text-white text-[0.5rem] group-hover:text-[3rem] transition-all duration-300 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[rgba(255,255,255,.3)] rounded-[16px] w-[2.2em] h-[2.2em] flex items-center justify-center"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="px-[35px] text-center">
+                            <a href="#" class="hover:text-[#20d9c9] duration-300 ease text-blackText text-[1.286rem] xl:text-[1.586rem] 5xl:text-[1.786rem] after:content-[' '] after:block after:w-[47%] after:h-[1px] after:mx-auto after:my-[1.0667em] after:bg-[#eaeaea]">Fast Delivery</a>
+                            <p class="text-accent text-balance mt-[1.2857em]">
+                                Overnight dry cleaning and laundry delivery. Your clean clothes will arrive 24h after pick-up. By the time you take off that last shirt, the fresh...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/3 pt-[30px] sm:pt-[20px] lg:pt-0 pb-[10px] pr-[10px] sm:pb-[20px] sm:pr-[20px] lg:pb-[30px] lg:pr-[30px]">
+                        <div class="mx-auto mb-[3.85em] w-[20.2rem] max-w-[77%] relative">
+                            <img class="rounded-full" src="img/service-1-370x370.jpg" alt="">
+                            <div class="w-full h-full absolute flex top-0 group">
+                                <a href="#" class="grow relative h-full w-full bg-[rgba(0,0,0,.5)] h-full w-full rounded-full opacity-0 group-hover:opacity-100 duration-300 transition-opacity">
+                                    <i class="icon-link text-white text-[0.5rem] group-hover:text-[3rem] transition-all duration-300 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[rgba(255,255,255,.3)] rounded-[16px] w-[2.2em] h-[2.2em] flex items-center justify-center"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="px-[35px] text-center">
+                            <a href="#" class="hover:text-[#20d9c9] duration-300 ease text-blackText text-[1.286rem] xl:text-[1.586rem] 5xl:text-[1.786rem] after:content-[' '] after:block after:w-[47%] after:h-[1px] after:mx-auto after:my-[1.0667em] after:bg-[#eaeaea]">Excellent Results</a>
+                            <p class="text-accent text-balance mt-[1.2857em]">
+                                We provide high quality dry cleaning, laundry and ironing services from premium facilities, and take custom orders so you can look and feel just...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-[2.2rem]">
+                    <a href="#" class="gradient-btn-bg py-[1.65em] px-[3.1em] text-[#fff] font-bold text-[.857rem] rounded-full tracking-[.19em]">MORE ABOUT US</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="mt-[8.2rem] pt-[13.7rem] pb-[12rem]" style="background-image: url(/img/bg2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover">
+                <div class="container mx-auto flex flex-wrap">
+                    <div class="w-full sm:w-1/2 lg:w-1/4 pr-[10px] sm:pr-[20px] lg:pr-[30px] text-center text-white">
+                        <div class="px-[10px]">
+                            <h1 class="text-[3.286rem] xl:text-[4.286rem] leading-[1em]">4000</h1>
+                            <div class="my-[1.2em] text-[1em]">
+                                <h4>
+                                    Clients per Week
+                                </h4>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="w-full sm:w-1/2 lg:w-1/4 pt-[30px] sm:pt-0 pr-[10px] sm:pr-[20px] lg:pr-[30px] text-center text-white">
+                        <div class="px-[10px]">
+                            <h1 class="text-[3.286rem] xl:text-[4.286rem] leading-[1em]">17000</h1>
+                            <div class="my-[1.2em] text-[1em]">
+                                <h4>
+                                    Pounds of Laundry per Week
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/4 pt-[30px] sm:pt-[20px] lg:pt-0 pr-[10px] sm:pr-[20px] lg:pr-[30px] text-center text-white">
+                        <div class="px-[10px]">
+                            <h1 class="text-[3.286rem] xl:text-[4.286rem] leading-[1em]">167</h1>
+                            <h4 class="my-[1.2em] text-[1em]">
+                                People in Team
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/4 pt-[30px] sm:pt-[20px] lg:pt-0 pr-[10px] sm:pr-[20px] lg:pr-[30px] text-center text-white">
+                        <div class="px-[10px]">
+                            <h1 class="text-[3.286rem] xl:text-[4.286rem] leading-[1em]">194000</h1>
+                            <h4 class="my-[1.2em] text-[1em]">
+                                Pieces of Dry Cleaning
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="">
+                <div class="gradient-slides-bg">
+                    <div class="swiper testimonialsSwiper container">
+                        <div class="swiper-wrapper swiper-hover">
+                            <div class="swiper-slide ">
+                                <div class=" pt-[5.9em] pb-[5.1em] px-[3em] sm:pt-[7.9em] sm:pb-[7.1em] sm:px-[5em] flex flex-col items-center">
+                                    <p class="text-[1.786rem] leading-[1.4em] text-balance text-center text-white">
+                                        "I recommend your services to all my friends and colleagues. I loved how fast and efficient the help from your tech team came."
+                                    </p>
+                                    <div class="mt-[2.4rem]">
+                                        <img src="img/testimonials2-85x85.jpg" class="rounded-full" alt="" srcset="">
+                                    </div>
+                                    <h4 class="text-[.8571rem] font-bold tracking-[.19em] mt-[2.2rem] text-white">LISA SANTOS, AZ</h4>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class=" pt-[5.9em] pb-[5.1em] px-[3em] sm:pt-[7.9em] sm:pb-[7.1em] sm:px-[5em] flex flex-col items-center">
+                                    <p class="text-[1.786rem] leading-[1.4em] text-balance text-center text-white">
+                                        "I know that my family deserves the best. It was the right decision for us to use this company for their great services!"
+                                    </p>
+                                    <div class="mt-[2.4rem]">
+                                        <img src="img/testimonials3-85x85.jpg" class="rounded-full" alt="" srcset="">
+                                    </div>
+                                    <h4 class="text-[.8571rem] font-bold tracking-[.19em] mt-[2.2rem] text-white">MEREDITH JONES, OR</h4>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class=" pt-[5.9em] pb-[5.1em] px-[3em] sm:pt-[7.9em] sm:pb-[7.1em] sm:px-[5em] flex flex-col items-center">
+                                    <p class="text-[1.786rem] leading-[1.4em] text-balance text-center text-white">
+                                        "Everything about your company is great: from quality products and impeccable customer support to various services. Thank you!"
+                                    </p>
+                                    <div class="mt-[2.4rem]">
+                                        <img src="img/testimonials1-85x85.jpg" class="rounded-full" alt="" srcset="">
+                                    </div>
+                                    <h4 class="text-[.8571rem] font-bold tracking-[.19em] mt-[2.2rem] text-white">LAURA GREEN, NY</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="mt-[8.6rem] pb-[8.5rem] container mx-auto">
+                <div class="text-center">
+                    <h1 class="leading-[1.2em] text-blackText text-[2.514rem] sm:text-[2.814rem] xl:text-[2.914rem] 2xl:text-[3.214rem] after:content-[' '] after:block after:w-[47%] after:h-[1px] after:mx-auto after:mt-[.8667em] after:mb-[.7667em] after:max-w-[270px] after:bg-[#eaeaea]">Clean Clothes Have Never Been This Easy!</h1>
+                    <h4 class="text-main text-[.8571em] tracking-[.19em] font-bold mb-[4.35rem]">HOW OUR SERVICE WORKS:</h4>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full sm:w-1/2 lg:w-1/4 pb-[10px] pr-[10px] sm:pb-[20px] sm:pr-[20px] lg:pb-[30px] lg:pr-[30px]">
+                        <div class="flex justify-center relative mb-[2.9rem]">
+                            <a href="#">
+                                <div class="p-12 border rounded-full group hover:bg-main transition-all duration-300 ">
+                                    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-white fill-main transition-all duration-300 w-[5em] h-[5em]" ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>24 Technology Devices icons</title><rect class="group-hover:stroke-white stroke-main transition-all duration-300" x="9" y="1" width="30" height="46" rx="2" ry="2" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></rect><line class="group-hover:stroke-white stroke-main transition-all duration-300" x1="9" y1="36" x2="39" y2="36" fill="none" stroke-miterlimit="10" stroke-width="2"></line><line class="group-hover:stroke-white stroke-main transition-all duration-300" x1="9" y1="7" x2="39" y2="7" fill="none" stroke-miterlimit="10" stroke-width="2"></line><circle cx="24.5" cy="41.5" r="2"></circle><rect width="48" height="48" fill="none"></rect></g></svg>
+                                </div>
+                            </a>
+                            <div class="absolute top-1/2 right-[-30px] -translate-y-1/2 hidden xl:block">
+                                <i class="icon-right-open-mini text-[3.6rem] text-[#eaeaea]"></i>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="text-[1.571rem] font-bold text-blackText after:content-[' '] after:block after:w-[47%] after:h-[1px] after:mx-auto after:mt-[.8em] after:mb-[1.1em] after:bg-[#eaeaea]">Sign up</a>
+                            <p class="text-accent text-balance mt-[1.2857em]">
+                                All members receive bonuses and/or discounts. Sign up for more information.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/4 pt-[30px] sm:pt-0 pb-[10px] pr-[10px] sm:pb-[20px] sm:pr-[20px] lg:pb-[30px] lg:pr-[30px]">
+                        <div class="flex justify-center relative mb-[2.9rem]">
+                            <a href="#">
+                                <div class="p-12 border rounded-full group hover:bg-main transition-all duration-300">
+                                    <svg class="group-hover:fill-white fill-main w-[5em] h-[5em] transition-all duration-300" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="translate(1 1)"> <g> <g> <path d="M485.4,411.16c-50.93-27.008-89.996-42.152-124.772-47.958l3.599-4.948c1.707-1.707,2.56-4.267,1.707-6.827 l-8.067-32.267c20.803-29.854,32.748-67.112,31.96-102.56v-50.76c0.579-0.417,1.149-0.847,1.707-1.293 c11.093-9.387,17.067-23.04,17.067-36.693c0-64-52.053-116.053-115.2-116.053h-75.947c-64,0-116.053,52.053-116.907,115.2 c0,14.507,5.973,27.307,17.067,36.693c0.279,0.215,0.57,0.415,0.853,0.624V216.6c0,35.558,12.446,72.939,33.597,102.839 l-7.997,31.987c0,1.707,0,4.267,1.707,6.827l3.599,4.948c-34.776,5.807-73.843,20.95-124.772,47.958 C8.387,418.84-1,435.053-1,452.973v36.693c0,5.12,3.413,8.533,8.533,8.533h494.933c5.12,0,8.533-3.413,8.533-8.533v-36.693 C511,435.907,500.76,419.693,485.4,411.16z M344.6,336.067l3.413,15.36l-8.717,11.969c-0.556,0.455-1.071,1.006-1.523,1.684 l-46.933,64.853l-23.009-51.982c24.824-2.986,47.238-14.489,65.882-31.265C337.457,343.385,341.093,339.844,344.6,336.067z M380.44,150.893c-0.224,0.196-0.458,0.378-0.687,0.567c-0.959,0.223-1.89,0.582-2.726,1.14 c-3.692,2.769-7.634,4.53-11.689,5.303c-3.216,0.493-6.488,0.449-9.644-0.183c-61.203-11.621-123.109-12.69-182.526-3.21 c-6.594,0.953-13.167,2.019-19.714,3.21c-1.051,0.117-2.102,0.181-3.151,0.202c-6.86-0.123-13.508-2.029-19.036-6.175 c-5.12-3.413-8.533-8.533-10.24-13.653l36.693-6.827c64-11.947,129.707-11.947,195.413,0l36.407,6.773 C387.651,142.871,384.504,147.337,380.44,150.893z M216.6,28.867h75.947c52.343,0,95.272,40.762,98.752,92.233l-35.605-6.046 c-67.413-11.947-135.68-11.947-201.387,0l-35.605,6.046C122.179,69.629,165.075,28.867,216.6,28.867z M135.533,173.08 c6.827,1.707,14.507,2.56,22.187,0.853c31.861-5.947,64.144-8.932,96.64-8.958c32.5,0.026,65.21,3.01,97.92,8.958 c2.331,0.583,4.261,0.764,6.068,0.823c5.372,0.407,10.986-0.393,16.118-1.676v43.52c0,37.209-12.764,70.274-31.929,95.407 l-0.498,0.166c-0.853,0.853-1.707,1.707-2.56,2.56c-4.293,5.724-8.824,10.943-13.558,15.649 c-21.188,19.74-46.685,31.284-70.921,31.284c0,0-0.001,0-0.001,0c-0.887,0-1.772-0.018-2.657-0.046 c-14.418-0.496-29.207-5.012-43.208-12.837c-13.895-7.982-26.966-19.49-38.614-34.051c-0.853-0.853-1.707-1.707-2.56-2.56 l-0.498-0.166c-19.164-25.134-31.929-58.199-31.929-95.407V173.08z M242.169,377.951l-23.009,51.982l-46.933-64.853 c-0.272-0.272-0.572-0.541-0.884-0.806l-9.356-12.848l3.413-15.36c1.154,1.243,2.325,2.454,3.506,3.646 C188.983,360.249,214.035,374.568,242.169,377.951z M493.933,481.133H297.667h-281.6v-28.16c0-11.093,5.973-21.333,16.213-26.453 c54.393-28.896,93.548-43.399,128.428-47.731l53.332,73.331c1.34,2.011,3.215,2.959,5.608,3.277 c0.404,0.08,0.811,0.136,1.218,0.136c0,0,0.853,0,0.853,0.853c2.56,0,5.973-2.56,6.827-5.12l26.501-59.628l11.291,24.767 l15.115,34.008c0.853,2.56,3.413,5.12,6.827,5.12h0.853c2.56,0,5.12-1.707,6.827-3.413l53.883-74.09 c34.757,5.245,74.615,19.737,127.877,47.636c10.24,5.973,16.213,16.213,16.213,27.307V481.133z"></path> <path d="M237.933,97.133h34.133c5.12,0,8.533-3.413,8.533-8.533V45.933c0-5.12-3.413-8.533-8.533-8.533h-34.133 c-5.12,0-8.533,3.413-8.533,8.533V88.6C229.4,93.72,232.813,97.133,237.933,97.133z M246.467,54.467h17.067v25.6h-17.067V54.467z "></path> </g> </g> </g> </g></svg>
+                                </div>
+                            </a>
+                            <div class="absolute top-1/2 right-[-30px] -translate-y-1/2 hidden xl:block">
+                                <i class="icon-right-open-mini text-[3.6rem] text-[#eaeaea]"></i>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="text-[1.571rem] font-bold text-blackText after:content-[' '] after:block after:w-[47%] after:h-[1px] after:mx-auto after:mt-[.8em] after:mb-[1.1em] after:bg-[#eaeaea]">Pick Up</a>
+                            <p class="text-accent text-balance mt-[1.2857em]">
+                                If you are in an urgent need of laundry, we can come right to you for a pick-up.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/4 pt-[30px] pt-[30px] sm:pt-[20px] lg:pt-0 pb-[10px] pr-[10px] sm:pb-[20px] sm:pr-[20px] lg:pb-[30px] lg:pr-[30px]">
+                        <div class="flex justify-center relative mb-[2.9rem]">
+                            <a href="#">
+                                <div class="p-12 border rounded-full group hover:bg-main transition-all duration-300">
+                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" class="group-hover:fill-white fill-main w-[5em] h-[5em] transition-all duration-300"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect id="bg" x="-426" y="-149" display="none" fill="#6DCFF6" width="544" height="455"></rect> <g id="Washing_machine"> <path d="M32,21c-8.8,0-16,7.2-16,16s7.2,16,16,16s16-7.2,16-16S40.8,21,32,21z M32,51c-7.7,0-14-6.3-14-14s6.3-14,14-14 s14,6.3,14,14S39.7,51,32,51z"></path> <path d="M52,14h-2c-0.6,0-1,0.4-1,1s0.4,1,1,1h2c0.6,0,1-0.4,1-1S52.6,14,52,14z"></path> <path d="M52,8c0-2.2-1.8-4-4-4s-4,1.8-4,4s1.8,4,4,4S52,10.2,52,8z M48,10c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S49.1,10,48,10z"></path> <path d="M35.3,26.2c-0.6-0.1-1.2-0.2-1.8-0.2c-0.6,0-1,0.4-1,1s0.4,1,1,1c0.5,0,1,0,1.4,0.1c0.1,0,0.1,0,0.2,0c0.5,0,0.9-0.3,1-0.8 C36.2,26.8,35.8,26.3,35.3,26.2z"></path> <path d="M39.5,28.1c-0.4-0.3-1.1-0.2-1.4,0.2c-0.3,0.4-0.3,1.1,0.2,1.4c2,1.5,3.1,3.8,3.1,6.3c0,0.6,0.4,1,1,1s1-0.4,1-1 C43.5,32.9,42,30,39.5,28.1z"></path> <path d="M49,0H15c-4.4,0-8,3.6-8,8v48c0,4.4,3.6,8,8,8h34c4.4,0,8-3.6,8-8V8C57,3.6,53.4,0,49,0z M55,56c0,3.3-2.7,6-6,6H15 c-3.3,0-6-2.7-6-6V16h37c0.6,0,1-0.4,1-1s-0.4-1-1-1H9V8c0-3.3,2.7-6,6-6h34c3.3,0,6,2.7,6,6V56z"></path> </g> </g></svg>
+                                </div>
+                            </a>
+                            <div class="absolute top-1/2 right-[-30px] -translate-y-1/2 hidden xl:block">
+                                <i class="icon-right-open-mini text-[3.6rem] text-[#eaeaea]"></i>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="text-[1.571rem] font-bold text-blackText after:content-[' '] after:block after:w-[47%] after:h-[1px] after:mx-auto after:mt-[.8em] after:mb-[1.1em] after:bg-[#eaeaea]">Cleaning</a>
+                            <p class="text-accent text-balance mt-[1.2857em]">
+                                We use premium materials, technologies and guarantee treatment with care.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 lg:w-1/4 pt-[30px] pt-[30px] sm:pt-[20px] lg:pt-0 pb-[10px] pr-[10px] sm:pb-[20px] sm:pr-[20px] lg:pb-[30px] lg:pr-[30px]">
+                        <div class="flex justify-center relative mb-[2.9rem]">
+                            <a href="#">
+                                <div class="p-12 border rounded-full group hover:bg-main transition-all duration-300">
+                                    <svg class="group-hover:fill-white fill-main w-[5em] h-[5em] transition-all duration-300" height="200px" width="200px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 385.019 385.019" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M376.022,165.367c0-0.012,0.001-0.023,0.001-0.035l-1.178-97.995c0-0.012-0.002-0.024-0.002-0.036 c-0.059-30.391-24.669-55.127-55.014-55.387c0,0-75.634-11.915-76.153-11.915H141.338c-0.359,0-76.152,11.914-76.152,11.914 c-30.345,0.259-54.955,24.997-55.013,55.388c0,0.012-0.003,0.023-0.003,0.036l-1.176,97.995c0,0.012,0.002,0.023,0.002,0.035 c0,0.012-0.002,0.023-0.002,0.035v21.991c0,3.313,2.687,6,6,6h53.554L67.46,302.18c0,0.04-0.001,0.081-0.001,0.122 c0,8.694,1.735,17.064,5.163,24.922c-3.427,7.858-5.163,16.228-5.163,24.922v26.873c0,3.314,2.687,6,6,6h236.768 c1.591,0,3.118-0.632,4.243-1.757c1.125-1.125,1.757-2.652,1.757-4.243l-0.002-26.872c0-8.693-1.734-17.063-5.161-24.921 c3.428-7.858,5.163-16.227,5.163-24.922c0-0.023,0-0.046,0-0.069l-1.089-108.839h54.886c3.314,0,6-2.687,6-6v-21.991 C376.024,165.391,376.022,165.379,376.022,165.367z M246.874,12.607l5.55,0.871L242.34,52.473l-23.053-12.076 C229.653,32.347,240.809,22.318,246.874,12.607z M232.479,12c-6.927,8.229-17.605,16.917-27.055,23.787 c-0.692,0.319-9.847,6.879-12.918,8.839c-3.067-1.958-12.227-8.527-12.931-8.849c-9.447-6.868-20.118-15.552-27.041-23.777H232.479 z M165.728,40.399l-23.049,12.074l-10.089-39.015l5.539-0.872C144.19,22.305,155.354,32.342,165.728,40.399z M20.995,181.394 v-9.989h46.465v9.989H20.995z M298.677,328.854c-0.001,0.001-0.001,0.001,0.001,0.003c0.048,0.169,0.103,0.336,0.166,0.501 c0.074,0.194,0.157,0.384,0.25,0.569c3.404,6.939,5.13,14.414,5.13,22.219l0.001,20.872H79.459v-20.873 c0-7.806,1.727-15.28,5.132-22.218c0.085-0.17,0.163-0.343,0.232-0.52c0-0.001,0.001-0.002,0.001-0.004 c0-0.001,0.001-0.002,0.001-0.003c0.075-0.193,0.14-0.389,0.194-0.587c0.142-0.515,0.215-1.05,0.216-1.59 c0-0.884-0.195-1.782-0.608-2.629c0,0-0.001-0.001-0.001-0.001c-0.001-0.002-0.002-0.005-0.004-0.007c0-0.001,0-0.001-0.001-0.003 c-0.001-0.003-0.003-0.006-0.004-0.009c-3.419-6.945-5.154-14.428-5.159-22.243l2-199.924c0.033-3.313-2.626-6.027-5.939-6.06 c-0.021,0-0.041,0-0.062,0c-3.285,0-5.965,2.647-5.998,5.94l-0.571,57.116H21.067l1.103-91.921c0-0.012-0.001-0.023-0.001-0.035 c0-0.012,0.002-0.024,0.002-0.037c0-23.985,19.513-43.498,43.498-43.498c0.312,0,55.01-8.58,55.01-8.58L132.954,62.8 c0.458,1.773,1.702,3.239,3.375,3.982c0.776,0.344,1.605,0.516,2.434,0.516c0.958,0,1.914-0.229,2.784-0.685l34.931-18.298 c3.79,2.652,7.057,4.803,9.365,6.285v31.569c0,3.313,2.686,6,6,6c3.313,0,6-2.687,6-6V55.444c2.281-1.442,6.103-3.919,10.693-7.131 l34.935,18.3c0.87,0.456,1.826,0.685,2.784,0.685c0.828,0,1.657-0.171,2.434-0.516c1.674-0.743,2.917-2.209,3.376-3.982 l12.271-47.451c0,0,54.701,8.564,55.013,8.564c23.985,0,43.498,19.513,43.498,43.497c0,0.012,0.002,0.024,0.002,0.037 c0,0.012-0.002,0.023-0.002,0.036l1.105,91.921h-49.153l-0.571-57.116c-0.033-3.313-2.758-5.997-6.06-5.939 c-3.314,0.033-5.973,2.746-5.939,6.06l1.999,199.895c0,7.825-1.735,15.318-5.159,22.272c-0.001,0.003-0.003,0.006-0.004,0.009 c0,0.001-0.001,0.001-0.001,0.003c-0.001,0.002-0.002,0.005-0.004,0.007c0,0.001,0,0.001,0,0.001 c-0.001,0.003-0.003,0.006-0.004,0.009c0,0,0,0,0,0.001c-0.411,0.845-0.604,1.739-0.604,2.62 C298.451,327.778,298.528,328.327,298.677,328.854z M315.018,181.394l-0.051-9.989h49.057v9.989H315.018z"></path> <path d="M259.395,104.783h-10.472c-3.314,0-6,2.687-6,6c0,3.313,2.686,6,6,6h10.472c3.314,0,6-2.687,6-6 C265.395,107.469,262.708,104.783,259.395,104.783z"></path> </g> </g></svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a href="#" class="text-[1.571rem] font-bold text-blackText after:content-[' '] after:block after:w-[47%] after:h-[1px] after:mx-auto after:mt-[.8em] after:mb-[1.1em] after:bg-[#eaeaea]">Delivery</a>
+                            <p class="text-accent text-balance mt-[1.2857em]">
+                                Free delivery for every order upon prior request within 24 hours after cleaning
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="">
+                <iframe class="w-full h-[h-200px] sm:h-[250px] lg:h-[336px]" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4966.621902998001!2d-0.127231!3d51.507511!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sus!4v1716796674691!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="bg-[#f7f7f6] ">
+            <div class="container mx-auto flex flex-wrap pt-[6.5rem] pb-[4.7rem]">
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-[1.5em] pr-[10px] sm:pr-[20px] lg:pr-[30px]">
+                    <div class="flex">
+                        <a href="">
+                            <img src="img/logo_2x.webp" class="h-[62px] md:h-[52px] 2xl:h-[62px] mr-[.7857em] mb-[.7857em]" alt="" srcset="">
+                        </a>
+                    </div>
+                    <div class="mt-[2.9em] text-accent text-balance">
+                        Ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Ab illo inventore veritatis et quasi architecto. Ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-[1.5em] pr-[10px] sm:pr-[20px] lg:pr-[30px]">
+                    <h1 class="text-[1.571rem] font-bold text-blackText pb-[.8em] mb-[2em] mt-[.7em] border-b border-[#e1e0df]">Blog Feed</h1>
+                    <ul>
+                        <li class="mb-[2em]">
+                            <a href="#" class="text-accent hover:text-main duration-300 ease">M3 E36 Cabrio</a>
+                            <h4 class="text-[.8571rem] pt-[.3em] font-bold tracking-[.19em] text-main">JULY 7, 2016</h4>
+                        </li>
+                        <li class="mb-[2em]">
+                            <a href="#" class="text-accent hover:text-main duration-300 ease">Ordering a rinse is easy!</a>
+                            <h4 class="text-[.8571rem] pt-[.3em] font-bold tracking-[.19em] text-main">JUNE 21, 2016</h4>
+                        </li>
+                        <li class="mb-[2em]">
+                            <a href="#" class="text-accent hover:text-main duration-300 ease">Don’t wait for cleaning until it’s too late!</a>
+                            <h4 class="text-[.8571rem] pt-[.3em] font-bold tracking-[.19em] text-main">JUNE 15, 2016</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-[1.5em] pr-[10px] sm:mt-[3.2em] lg:mt-0 sm:pt-[20px] lg:pt-0 sm:pr-[20px] lg:pr-[30px]">
+                    <h1 class="text-[1.571rem] font-bold text-blackText pb-[.8em] mb-[2em] mt-[.7em] border-b border-[#e1e0df]">Services</h1>
+                    <ul class="list-image-[url(../img/chevron-right.svg)] list-inside text-accent">
+                        <li class="mb-[.57em]"><a href="#" class="hover:text-main duration-300 ease">Dry Clean Your Winter Coat</a></li>
+                        <li class="mb-[.57em]"><a href="#" class="hover:text-main duration-300 ease">Dry Clean</a></li>
+                        <li class="mb-[.57em]"><a href="#" class="hover:text-main duration-300 ease">Ironing Services</a></li>
+                        <li class="mb-[.57em]"><a href="#" class="hover:text-main duration-300 ease">Laundry</a></li>
+                        <li class="mb-[.57em]"><a href="#" class="hover:text-main duration-300 ease">Wash & Fold</a></li>
+                        <li class="mb-[.57em]"><a href="#" class="hover:text-main duration-300 ease">Laundry Service London</a></li>
+                        <li class="mb-[.57em]"><a href="#" class="hover:text-main duration-300 ease">Laundry App</a></li>
+                    </ul>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-[1.5em] pr-[10px] sm:mt-[3.2em] lg:mt-0 sm:pt-[20px] lg:pt-0 sm:pr-[20px] lg:pr-[30px]">
+                    <h1 class="text-[1.571rem] font-bold text-blackText pb-[.8em] mb-[2em] mt-[.7em] border-b border-[#e1e0df]">Contact Info</h1>
+                    <div class="text-[1.429rem] mb-[1.7rem]">
+                        <i class="icon-phone mr-[1em] text-[#0097d8]"></i>
+                        <a href="tel:123-456-7890" class="text-[#20d9c9] hover:text-main duration-300 ease">123-456-7890</a>
+                    </div>
+                    <h4 class="text-accent">123, New Lenox, Chicago IL 60606</h4>
+                    <a href="mailto:info@yoursitename.com" class="text-main underline decoration-accent">info@yoursitename.com</a>
+                    <div class="mt-[3rem] flex">
+                        <div>
+                            <a href="" class="mr-[.65em] pb-[.25em] border-[#e1e0df] border rounded-full h-[2.8em] w-[2.8em] flex justify-center items-center group hover:border-main duration-300 ease">
+                                <svg class="mt-1 fill-accent stroke-accent group-hover:stroke-main group-hover:fill-main duration-300 ease" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.5em" height="1.5em" viewBox="0 0 50 50">
+                                    <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="mr-[.65em] pb-[.25em] border-[#e1e0df] border rounded-full h-[2.8em] w-[2.8em] flex justify-center items-center group hover:border-main duration-300 ease">
+                                <svg class="mt-1 fill-accent stroke-accent group-hover:stroke-main group-hover:fill-main duration-300 ease" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.5em" height="1.5em" viewBox="0 0 30 30">
+                                    <path d="M12,27V15H8v-4h4V8.852C12,4.785,13.981,3,17.361,3c1.619,0,2.475,0.12,2.88,0.175V7h-2.305C16.501,7,16,7.757,16,9.291V11 h4.205l-0.571,4H16v12H12z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="mr-[.65em] pb-[.25em] border-[#e1e0df] border rounded-full h-[2.8em] w-[2.8em] flex justify-center items-center group hover:border-main duration-300 ease">
+                                 <svg class="mt-1 fill-accent stroke-accent group-hover:stroke-main group-hover:fill-main duration-300 ease" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.5em" height="1.5em" viewBox="0 0 48 48">
+                                    <path d="M20 23c1 0 4-1.618 4-5.618C24 11.163 18.494 10 12.292 10 11.12 10 7.547 10.002 5 10.001c-1.657-.001-3 1.343-3 3V35c0 1.657 1.343 3 3 3l11.8 0c4.419 0 8.165-3.496 8.2-7.915C25.047 24.009 20 23 20 23zM8 15h7c1.657 0 3 1.343 3 3s-1.343 3-3 3H8V15zM15.5 33H8v-7h7.5c1.933 0 3.5 1.567 3.5 3.5S17.433 33 15.5 33zM45.51 29c.829 0 1.5-.671 1.501-1.5v0c0-5.799-4.011-10.5-10-10.5-5.523 0-10 4.701-10 10.5 0 5.799 4.477 10.5 10 10.5 4.887 0 7.602-2.286 8.928-5.643.256-.647-.246-1.348-.942-1.348h-2.401c-.365 0-.688.207-.877.52C40.805 33.039 39.41 34 37.532 34c-2.812 0-4.86-2.135-5.382-5h10.722H45.51zM37.011 21c2.077 0 4.09 1.656 4.658 4h-9.273C33.149 22.651 34.931 21 37.011 21zM41.5 15h-8c-.828 0-1.5-.672-1.5-1.5v0c0-.828.672-1.5 1.5-1.5h8c.828 0 1.5.672 1.5 1.5v0C43 14.328 42.328 15 41.5 15z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="" class="mr-[.65em] pb-[.25em] border-[#e1e0df] border rounded-full h-[2.8em] w-[2.8em] flex justify-center items-center group hover:border-main duration-300 ease">
+                                <svg class="mt-1 fill-accent stroke-accent group-hover:stroke-main group-hover:fill-main duration-300 ease" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1.5em" height="1.5em" viewBox="0 0 48 48">
+                                    <path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-[#e1e0df] pt-[1.6em] pb-[2.4em]">
+                <div class="container mx-auto text-accent">
+                    <p><a href="#" class="underline">AncoraThemes</a> © 2024. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".testimonialsSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        const prevButton = document.querySelector('.swiper-button-prev');
+        const nextButton = document.querySelector('.swiper-button-next');
+
+        prevButton.addEventListener('mouseover', () => {
+            nextButton.style.transform = 'translateX(-100%)';
+            nextButton.style.opacity = '1';
+        });
+        prevButton.addEventListener('mouseout', () => {
+            nextButton.style.transform = '';
+            nextButton.style.opacity = '';
+        });
+        nextButton.addEventListener('mouseover', () => {
+            prevButton.style.transform = 'translateX(100%)';
+            prevButton.style.opacity = '1';
+        });
+        nextButton.addEventListener('mouseout', () => {
+            prevButton.style.transform = '';
+            prevButton.style.opacity = '';
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
