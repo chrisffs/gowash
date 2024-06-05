@@ -1854,28 +1854,13 @@ html, body {
   background: linear-gradient(to bottom, #0097d8 0%, #0eb3d4 75%);
 }
 
+.gradient-banner-bg {
+  background: linear-gradient(to bottom, #17c8ca 0%, #20d9c9 75%);
+}
+
 .gradient-btn-bg:hover {
   background: #17c8ca;
 }
-
-/* .menu-link .submenu:hover {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.menu-link .submenu {
-    opacity: 0;
-    z-index: -999;
-    transform: translateY(100px);
-    transition: opacity 0.5s, transform 1s, z-index 0.5s;
-    transition-delay: 0.7s;
-}
-
-.menu-link:hover .submenu {
-    opacity: 1;
-    transform: translateY(0);
-    animation: jelly 0.5s;
-} */
 
 .sub-menu {
   max-height: 0;
@@ -1891,26 +1876,15 @@ html, body {
   top: 64px;
   left: 0;
   opacity: 0;
-  /* visibility: hidden; */
-  transform: translateY(100px);
-  transition: opacity 0.5s ease, transform 1s ease;
-  transition-delay: 0.7s;
+  display: none;
 }
 
-.submenu:hover {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.menu-link:hover + .submenu {
+.jelly-animate {
   animation: jelly 0.5s;
-  opacity: 1;
-  transform: translateY(0);
-  /* visibility: visible; */
 }
 
-.animated {
-  animation: jelly 0.5s;
+.fade-down {
+  animation: fadeOutDown 1s;
 }
 
 .hover-effect {
